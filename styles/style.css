@@ -1,0 +1,90 @@
+:root {
+    --yellow: #ffbb00;
+    --wine: #8d0523;
+    font: 20px;
+}
+
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.pageWrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% auto 5%;
+    grid-template-areas: 
+                        "h h h h h h h h h h h h"
+                        "c c c c c c c c c c c c"
+                        "f f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header .header__navbar {
+    width: 98%;
+    display: flex;
+}
+
+.header__navbar .brand {
+    height: 100%;
+    width: 40%;
+    display: block;
+}
+
+.header__navbar .navlinks {
+    width: 60%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+.navlinks .navlinks__navlink {
+    width: 10%;
+    color: var(--wine);
+    margin-right: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.navlinks__navlink select {
+    background: none;
+    border: 0;
+    color: var(--wine);
+}
+
+.navlinks__navlink select:focus {
+    outline: none;
+}
+
+.navlinks .navlinks__navlink:last-child {
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: #fff;
+    background: var(--wine);
+}
+
+.content {
+    grid-area: c;
+    background: var(--yellow);
+    overflow-y: auto;
+}
+
+.footer {
+    grid-area: f;
+    background: var(--wine);
+}
