@@ -10,6 +10,7 @@ html, body {
 }
 
 .pageWrapper {
+    position: relative;
     height: 100%;
     width: 100%;
     display: grid;
@@ -28,7 +29,6 @@ html, body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 5px 20px -5px var(--wine); 
-    z-index: 1;
 }
 
 .header a {
@@ -36,7 +36,8 @@ html, body {
 }
 
 .header .header__navbar {
-    width: 98%;
+    /* position: sticky; */
+    width: 95%;
     height: 85%;
     display: flex;
     flex: 1;
@@ -105,10 +106,204 @@ html, body {
 
 .content {
     grid-area: c;
-    /* background: var(--yellow); */
     overflow-y: auto;
+    position: relative;
 }
 
+/*
+    ABOUT PAGE
+*/
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+    PHILOSOPHY, VISSION/MISSION 
+*/
+  .content > .philosophy {
+      position: relative;
+      width: 100%;
+      background: #272727e6;
+      justify-content: space-between;
+      color: #fff;
+  }
+  
+  .philosophy > * {
+      width: 60%;
+  }
+
+  .philosophy h3 {
+    display: inline;
+    font-size: 1.6rem;
+    font-weight: bold;
+    box-shadow: inset 0 -4px 0 0 var(--yellow);
+  }
+
+  .bag-white {
+    background: #fff;
+  }
+
+  .pad10 {
+    padding: 10px;
+  }
+
+  .philosophy__watchword {
+      justify-content: center;
+      font-size: 2rem;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .philosophy__watchword div {
+      
+      width: 120px;
+      height: 120px;
+  }
+
+  .philosophy__watchword div img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+  }
+
+  .philosophy__vissionMission {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      font-size: 1.4rem;
+  }
+
+  .philosophy__vissionMission > * {
+      width: 450px;
+      text-align: justify;
+      margin: 20px;
+  }
+
+  .philosophy__whoWeAre {
+      text-align: justify;
+      font-size: 1.4rem;
+  }
+/*
+  SCHOOL CATEGORIES
+*/
+
+  .content > .categories {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    background: #fff;
+    color: #fff;
+}
+
+.categories .categories__wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.categories__wrapper__category {
+    position: relative;
+    width: 400px;
+    height: 90%;
+    margin: 20px;
+    border-radius: 9px;
+    background: var(--wine);
+    color: #fff;
+}
+
+.category__info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(39, 39, 39, 0.502);
+    border-radius: 9px;
+    margin: 0;
+    justify-content: center;
+}
+
+
+.category__info .category__info__type {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.category__info .category__info__age {
+    font-size: 1.3rem;
+}
+  
+.category__info a {
+    text-decoration: none;
+    background: #fff;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    border-radius: 16px;
+    color: var(--wine);
+}
+
+
+/*
+    FACILITIES SECTION
+*/
+
+.facilities {
+    position: relative;
+}
+
+.facilities__container {
+    width: 50%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+    grid-template-areas: 
+        "a b c"
+        "d e f";
+    border: 1px solid var(--wine);
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.facilities__container .facility {
+    background: var(--wine);
+    border-radius: 9px;
+}
+
+/*
+    FOOTER
+*/
 .footer {
     grid-area: f;
     background: var(--wine);
@@ -150,19 +345,7 @@ html, body {
 
 
 /* @media screen and (max-width: 1024px) {
-    .header__navbar .navlinks {
-        width: 80%;
-         justify-content: space-between;
-        
-    }
-
-    .navlinks .navlinks__navlink {
-        width: 10%;
-        color: var(--wine);
-        margin-right: 0px;
-        font-size: 1rem;
-        
-    }
+    
 } */
 
 @media screen and (max-width: 768px) {
@@ -177,6 +360,10 @@ html, body {
         font-size: 1.5rem;
         color: var(--wine);
     }
+
+    .footer__copyright, .footer__developer{
+       width: 40%; 
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -189,3 +376,4 @@ html, body {
         text-align: left;
       }
 }
+
