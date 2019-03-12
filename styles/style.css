@@ -1,7 +1,7 @@
 :root {
     --yellow: #ffbb00;
     --wine: #8d0523;
-    font: 20px;
+    font: 20px 'Raleway', sans-serif;
 }
 
 html, body {
@@ -72,7 +72,7 @@ html, body {
     width: 10%;
     color: var(--wine);
     margin-right: 20px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -137,8 +137,8 @@ html, body {
 
   .philosophy h3 {
     display: inline;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 600;
     box-shadow: inset 0 -4px 0 0 var(--yellow);
   }
 
@@ -152,7 +152,7 @@ html, body {
 
   .philosophy__watchword {
       justify-content: center;
-      font-size: 2rem;
+      font-size: 1.6rem;
       padding: 20px;
       text-align: center;
   }
@@ -175,7 +175,8 @@ html, body {
       flex-wrap: wrap;
       justify-content: center;
       align-items: baseline;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      line-height: 40px;
   }
 
   .philosophy__vissionMission > * {
@@ -186,7 +187,8 @@ html, body {
 
   .philosophy__whoWeAre {
       text-align: justify;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      line-height: 40px;
   }
 /*
   SCHOOL CATEGORIES
@@ -197,6 +199,7 @@ html, body {
     width: 100%;
     height: 60vh;
     justify-content: center;
+    
     background: #fff;
     color: #fff;
 }
@@ -208,7 +211,11 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
 
+.categories__wrapper > #prebasic {
+    background-image: url('/images/sections/prebasic/childcare-1.jpg');
+    background-size: cover;
 }
 
 .categories__wrapper__category {
@@ -219,35 +226,45 @@ html, body {
     border-radius: 9px;
     background: var(--wine);
     color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(141, 5, 35,0.5);
+    transition: 0.3s;
+}
+.categories__wrapper__category:hover {
+    box-shadow: 0 10px 20px 0 rgba(141,5,35,0.5);
 }
 
 .category__info {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(39, 39, 39, 0.502);
+    background: rgba(39, 39, 39, 0.5);
     border-radius: 9px;
     margin: 0;
     justify-content: center;
 }
 
-
 .category__info .category__info__type {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .category__info .category__info__age {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
   
 .category__info a {
     text-decoration: none;
     background: #fff;
-    font-size: 1.4rem;
+    transition: 0.5s;
+    font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 16px;
     color: var(--wine);
+}
+.category__info a:hover {
+    border: 1px solid var(--yellow);
+    background: none;
+    color: #fff;
 }
 
 
@@ -300,6 +317,95 @@ html, body {
     background: var(--wine);
     border-radius: 9px;
 }
+
+/*
+    ADMIN SECTION
+*/
+
+.content > .admins {
+    width: 100%;
+    background: #fff;
+}
+
+.admins .admins__wrapper {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.admins__admin {
+    width: 350px;
+    height: 90%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--yellow);
+    border-radius: 9px;
+
+}
+
+.admins__admin img {
+    display: block;
+    max-width: 100%;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    margin-bottom: 0px;
+}
+
+.admin__bio {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    background: #fff;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.admin__bio p:first-child {
+    font-weight: 600;
+}
+
+.location {
+    background: var(--wine);
+    color: #fff;
+}
+
+.location__wrapper {
+width: 60%;
+height: 80%;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+border: 1px solid var(--wine);
+}
+
+.location__wrapper .address {
+    width: 50%;
+    height: 100%;
+}
+
+.address > * {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.address a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.location__wrapper .googlemap {
+    width: 50%;
+}
+.googlemap img {
+    max-width: 100%;
+    height: 100%;
+}
+
 
 /*
     FOOTER

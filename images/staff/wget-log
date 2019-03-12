@@ -1,0 +1,121 @@
+--2019-03-12 10:17:14--  ftp://data/image/jpeg
+           => ‘jpeg’
+Resolving data (data)... 198.105.244.11, 104.239.213.7
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:21:36--  ftp://data/image/jpeg
+  (try: 2) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:25:59--  ftp://data/image/jpeg
+  (try: 3) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:30:25--  ftp://data/image/jpeg
+  (try: 4) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:34:50--  ftp://data/image/jpeg
+  (try: 5) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:39:17--  ftp://data/image/jpeg
+  (try: 6) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:43:44--  ftp://data/image/jpeg
+  (try: 7) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:48:12--  ftp://data/image/jpeg
+  (try: 8) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:52:41--  ftp://data/image/jpeg
+  (try: 9) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 10:57:10--  ftp://data/image/jpeg
+  (try:10) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:01:41--  ftp://data/image/jpeg
+  (try:11) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:06:12--  ftp://data/image/jpeg
+  (try:12) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:10:42--  ftp://data/image/jpeg
+  (try:13) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:15:12--  ftp://data/image/jpeg
+  (try:14) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:19:43--  ftp://data/image/jpeg
+  (try:15) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:24:13--  ftp://data/image/jpeg
+  (try:16) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:28:43--  ftp://data/image/jpeg
+  (try:17) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:33:14--  ftp://data/image/jpeg
+  (try:18) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:37:44--  ftp://data/image/jpeg
+  (try:19) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Retrying.
+
+--2019-03-12 11:42:14--  ftp://data/image/jpeg
+  (try:20) => ‘jpeg’
+Connecting to data (data)|198.105.244.11|:21... failed: Connection timed out.
+Connecting to data (data)|104.239.213.7|:21... failed: Connection timed out.
+Giving up.
+
