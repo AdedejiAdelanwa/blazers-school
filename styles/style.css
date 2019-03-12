@@ -413,6 +413,7 @@ border: 1px solid var(--wine);
 .footer {
     grid-area: f;
     background: var(--wine);
+    font-size: 0.8rem;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -428,7 +429,7 @@ border: 1px solid var(--wine);
 }
 
 .footer__social {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     justify-content: center
 }
 
