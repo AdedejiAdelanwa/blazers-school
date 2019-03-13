@@ -26,11 +26,11 @@
                     <li class="navlinks__navlink navlinks__navlink--cursor">
                         <select onchange="window.location.href=this.value">
                             <option value="#">Section</option>
-                            <option value="about.html#primarySection">Primary</option>
-                            <option value="about.html#secondarySection">Secondary</option>
+                            <option value="about.html#primary">Primary</option>
+                            <option value="about.html#secondary">Secondary</option>
                         </select>
                     </li>
-                    <a href="about.html" class="navlinks__navlink"><li>Faculty/Staff</li></a>
+                    <a href="about.html#faculty" class="navlinks__navlink"><li>Faculty/Staff</li></a>
                     <a href="gallery.html" class="navlinks__navlink"><li>Gallery</li></a>
                     <a href="contact.html" class="navlinks__navlink"><li>Contact</li></a>
                 </ul>
@@ -83,7 +83,7 @@
                        </div> 
                     </div>
 
-                    <div class="categories__wrapper__category">
+                    <div id="primary" class="categories__wrapper__category">
                         <div class="category__info flex-vertical">
                            <p class="category__info__type">Basic</p>
                            <p class="category__info__age">Ages 3-9 years</p>
@@ -91,7 +91,7 @@
                        </div>
                     </div>
 
-                    <div class="categories__wrapper__category">
+                    <div id="secondary" class="categories__wrapper__category">
                         <div class="category__info flex-vertical">
                            <p class="category__info__type">Secondary</p>
                            <p class="category__info__age">Ages 0-2 years</p>
@@ -113,7 +113,7 @@
                     </div>
             </div>
 
-            <div class="admins flex-vertical">
+            <div id="faculty" class="admins flex-vertical">
                 <h2 style="color: var(--wine); font-size: 2.2rem; box-shadow: inset 0 -4px 0 0 var(--yellow);">SCHOOL HEADS</h2>
                 <div class="admins__wrapper">
                     <div class="admins__admin">
