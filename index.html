@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css">
-    
 </head>
 <body>
     <div class="pageWrapper">
@@ -42,7 +41,51 @@
         </header>
 
         <main class="content">
-            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="images/sections/basic/career-day.jpeg" style="width:100%">
+                  <div class="text">Some Texts here</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/gallery/hu1.jpg" style="width:100%">
+                  <div class="text">Some Texts also</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/gallery/e3.jpg" style="width:100%">
+                  <div class="text">Some nice Texts here too</div>
+                </div>
+                
+            </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <div class="legacies">
+
+                    <div class="legacies_legacy">
+                        <i class="fas fa-scroll"></i>
+                        <p>"Children can learn and we can get the best out of them, when given the necessary resources and environment that is conducive to learn"</p>
+                    </div>
+
+                    <div class="legacies_legacy">
+                        <i class="fas fa-eye"></i>
+                        <p>To build a citadel where the potential of every child as an achiever is exploited and maximized through the means of a system and an environment that is geared to evolve excellence in all our students.</p>
+                    </div>
+
+                    <div class="legacies_legacy">
+                        <i class="fas fa-bullseye"></i>
+                        <p>To bring up students with the fear of Almighty Allah and respect for humanity, inspiring and propelling them to become change agents in the ever changing, and competitive global economy by creating a total learning institution where every child is motivated and his or her potentials exploited, using modern tools and information communication technology.</p>
+                    </div>
+
+                </div>
+                
         </main>
 
         <footer class="footer">
@@ -68,6 +111,28 @@
                 x.className = "header__navbar";
             }
         }
+
+        
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
     </script>
 </body>
 </html>
