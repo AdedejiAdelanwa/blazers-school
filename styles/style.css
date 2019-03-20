@@ -235,6 +235,7 @@ html, body {
     margin: auto;
 }
 
+
 .news .news_row {
     box-sizing: border-box;
     width: 100%;
@@ -298,13 +299,30 @@ html, body {
   .content > .philosophy {
       position: relative;
       width: 100%;
-      background: #272727e6;
+      background: url('/images/professions.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
       justify-content: space-between;
       color: #fff;
   }
+
+  .philosophy::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(39, 39, 39, 0.9);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
   
   .philosophy > * {
       width: 60%;
+      z-index: 3;
   }
 
   .philosophy h3 {
@@ -385,8 +403,16 @@ html, body {
     align-items: center;
 }
 
-.categories__wrapper > #prebasic {
+#prebasic {
     background-image: url('/images/sections/prebasic/childcare-1.jpg');
+    background-size: cover;
+}
+#primary {
+    background-image: url('/images/sections/basic/primary.jpeg');
+    background-size: cover;
+}
+#secondary {
+    background-image: url('/images/sections/secondary/2.jpg');
     background-size: cover;
 }
 
@@ -409,10 +435,13 @@ html, body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(39, 39, 39, 0.5);
+    background: rgba(39, 39, 39, 0.8);
     border-radius: 9px;
     margin: 0;
     justify-content: center;
+}
+.category__info:hover{
+    background: rgba(39, 39, 39, 0.3);
 }
 
 .category__info .category__info__type {
@@ -462,7 +491,6 @@ html, body {
     grid-template-areas: 
         "a b c"
         "d e f";
-    border: 1px solid var(--wine);
 }
 
 .a {
@@ -649,7 +677,7 @@ border: 1px solid var(--wine);
     content: '';
  }
 
- .container_item > img {
+ .container_item > img, .facility > img {
      width: 100%;
      height: 100%;
      object-fit: fill;

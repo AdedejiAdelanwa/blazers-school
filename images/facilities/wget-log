@@ -1,0 +1,11 @@
+--2019-03-20 22:08:50--  https://www.google.com.ng/url?sa=i
+Resolving www.google.com.ng (www.google.com.ng)... 64.233.167.94, 2c0f:fb50:4003:802::2003
+Connecting to www.google.com.ng (www.google.com.ng)|64.233.167.94|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘url?sa=i’
+
+url?sa=i                [<=>                 ]       0  --.-KB/s               url?sa=i                [ <=>                ]   1.35K  --.-KB/s    in 0.008s  
+
+2019-03-20 22:08:51 (175 KB/s) - ‘url?sa=i’ saved [1387]
+

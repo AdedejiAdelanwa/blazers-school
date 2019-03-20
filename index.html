@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css">
+    
 </head>
 <body>
     <div class="pageWrapper">
@@ -71,7 +72,7 @@
 
                     <div class="legacies_legacy">
                         <i class="fas fa-scroll"></i>
-                        <h3 class="legacy_title">Philosophy</h3>
+                        <h3 id="filo" class="legacy_title">Philosophy</h3>
                         <p>"Children can learn and we can get the best out of them, when given the necessary resources and environment that is conducive to learn"</p>
                     </div>
 
@@ -159,7 +160,6 @@
                 x.className = "header__navbar";
             }
         }
-
         
 
         var slideIndex = 0;
@@ -180,6 +180,9 @@
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
             setTimeout(showSlides, 6000); // Change image every 2 seconds
+
+            // const top = document.querySelector('.slideshow-container');
+            // top.classList.add('dpNone');
 }
     </script>
 </body>
