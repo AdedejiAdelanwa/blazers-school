@@ -75,6 +75,9 @@ html, body {
     font-size: 1.1rem;
     text-align: center;
 }
+.navlinks__navlink:hover {
+    font-weight: 600;
+}
 
 .navlinks__navlink select {
     background: none;
@@ -259,12 +262,23 @@ html, body {
     box-sizing: border-box;
     width: 68%;
     padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: left;
 }
 .shortpiece .newsDate {
     text-align: right;
     font-size: 0.8rem;
     font-weight: 600;
+    font-style: italic;
+}
+.shortpiece a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--wine);
+}
+.shortpiece a:hover {
+    color: var(--yellow);
 }
 
 
