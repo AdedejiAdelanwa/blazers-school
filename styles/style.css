@@ -198,6 +198,8 @@ html, body {
 .legacies .legacies_legacy {
     border: 1px solid var(--wine);
     border-radius: 9px;
+    text-align: justify;
+    text-justify: inter-word;
     padding: 10px;
     width: 350px;
     margin: 10px;
@@ -213,6 +215,58 @@ html, body {
     font-size: 3.5rem;
     color: var(--wine);
 }
+
+.legacy_title {
+    color: var(--wine);
+    font-size: 2rem;
+    margin: 5px 0;
+}
+
+
+/*
+    News Section
+*/
+.news {
+    margin-top: 50px;
+    width: 95%;
+    margin: auto;
+}
+
+.news .news_row {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.news_row .news_row_item {
+    box-sizing: border-box;
+    width: 800px;
+    /* margin: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.news_row_item img {
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+.news_row_item .shortpiece {
+    box-sizing: border-box;
+    width: 68%;
+    padding: 10px;
+    text-align: left;
+}
+.shortpiece .newsDate {
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 
 /*
     ABOUT PAGE
