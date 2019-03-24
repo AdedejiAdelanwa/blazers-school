@@ -248,9 +248,9 @@ html, body {
 .news_row .news_row_item {
     box-sizing: border-box;
     width: 800px;
-    /* margin: 10px; */
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     
 }
@@ -273,10 +273,14 @@ html, body {
     font-weight: 600;
     font-style: italic;
 }
+
 .shortpiece a {
     font-size: 1rem;
     text-decoration: none;
     color: var(--wine);
+} .shortpiece ul {
+    font-size: 1rem;
+    font-weight: normal;
 }
 .shortpiece a:hover {
     color: var(--yellow);
