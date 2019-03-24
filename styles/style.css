@@ -117,6 +117,7 @@ html, body {
 */
 
 .mySlides {
+    position: relative;
     display: none;
     height: 100%;
 }
@@ -137,16 +138,24 @@ html, body {
 }
 
 /* Caption text */
-.text {
-  color: var(--wine);
+.mySlides .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow);
   font-size: 3rem;
   font-weight: 600;
   position: absolute;
-  top: 50%;
+  background: hsla(0, 0%, 15%, 0.4);
+  height: 100%;
+  z-index: 10;
+  top: 0%;
   width: 100%;
   text-align: center;
 }
-
+div.text p {
+    width: 50%;
+}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -635,7 +644,7 @@ border: 1px solid var(--wine);
      align-items: center;
      font-size: 1.5rem;
      color: #fff;
-     background: #272727e6;
+     background: linear-gradient(45deg,  #8d0523 50%,  #ffbb00);
      height: 20vh;
      margin-bottom: 2rem;
  }
